@@ -1,9 +1,3 @@
-var body = $response.body;
-console.log(body);
-
-$done(body);
-
-
-// $done({
-//     body: $request.body.replace(/(?<=advertisingList"\:\[)(.*)(?=\])/, "")
-// })
+let obj = JSON.parse($response.body);
+delete obj.responseData.advertisingList
+$done({body: JSON.stringify(obj)});
