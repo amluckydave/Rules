@@ -1,4 +1,3 @@
-var body = $response.body;
-body = body.replace(/(?<=advertisingList"\:\[)(.*)(?=\])/, "");
-if (consoleLog) console.log(body);
-$done({body});
+$done({
+    body: $request.body.replace(/(?<=advertisingList"\:\[)(.*)(?=\])/, "")
+})
