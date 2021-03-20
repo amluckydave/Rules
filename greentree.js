@@ -4,6 +4,5 @@
 
 // 两种方案
 $done({ 
-body: $response.body
-.replace(/(?<=advertisingList"\:)(.*)\]/, "[]")
+body: $response.body.replace(/(?<=advertisingList"\:)(.*)\]/, "[]")
 })
