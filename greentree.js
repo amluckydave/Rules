@@ -1,1 +1,1 @@
-console.log($response.headers);
+console.log($response.body);
