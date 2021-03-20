@@ -1,4 +1,6 @@
-console.log($response.body);
+let obj = JSON.parse($response.body);
+var elem = obj.responseData;
+console.log(JSON.stringify(elem));
 
 // let obj = JSON.parse($response.body);
 // obj.responseData.advertisingList = [];
