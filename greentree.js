@@ -1,1 +1,1 @@
-console.log($response.statusCode);
+console.log($response.headers);
